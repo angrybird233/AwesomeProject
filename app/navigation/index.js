@@ -5,6 +5,7 @@ const Stack = createNativeStackNavigator();
 
 import Login from '../pages/Login';
 import CustomerList from '../pages/CustomerList';
+import LandDetail from '../pages/LandDetail';
 
 export default function NavigationRoute() {
   return (
@@ -27,8 +28,20 @@ export default function NavigationRoute() {
           component={CustomerList}
           options={{
             title: '客户列表',
-            headerStyle: {backgroundColor: '#6DAB3F'},
-            headerTintColor: '#fff',
+            headerStyle: {backgroundColor: '#fff'},
+            headerTintColor: '#000',
+            headerTitleAlign: 'center',
+            headerShadowVisible: false,
+            headerTitleStyle: {fontSize: 18},
+          }}
+        />
+        <Stack.Screen
+          name="LandDetail"
+          component={LandDetail}
+          options={{
+            title: '地块详情',
+            headerStyle: {backgroundColor: '#fff'},
+            headerTintColor: '#000',
             headerTitleAlign: 'center',
             headerShadowVisible: false,
             headerTitleStyle: {fontSize: 18},

@@ -41,7 +41,6 @@ export default function Login({navigation}) {
         <View style={styles.inputItem}>
           <Image style={styles.inputIocn} source={phoneIcon} />
           <TextInput
-            multiline
             maxLength={11}
             editable
             placeholder="手机号"
@@ -113,20 +112,20 @@ const styles = StyleSheet.create({
     zIndex: 0,
   },
   formBgImage: {
-    width: 373,
+    width: '100%',
     height: 393,
     position: 'absolute',
     top: 200,
-    left: 10,
+    left: 0,
   },
   loginForm: {
-    width: 335,
+    width: '90%',
     height: 354,
     padding: 20,
     borderRadius: 16,
     position: 'absolute',
     top: 218,
-    left: 30,
+    left: 20,
     zIndex: 1,
   },
 
