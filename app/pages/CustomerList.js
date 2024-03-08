@@ -15,7 +15,7 @@ import {
 const emptyImage = {
   uri: 'https://mp-resource.shouyinongye.com/resource/shouyi/h5/cart-empty.png',
 };
-import {getLandCustomersApi} from '../api/index';
+// import {getLandCustomersApi} from '../api/index';
 
 const origin_list = [
   {
@@ -234,19 +234,18 @@ export default function CustomerList({navigation}) {
 
   useEffect(() => {
     const fetchCustomers = async () => {
-      try {
-        const params = {page: 1, size: 20};
-        const res = await getLandCustomersApi(params);
-        if (res && res.list) {
-          console.log('list', list);
-          setList(res.list);
-        }
-      } catch (error) {
-        console.log(error);
-        setList(origin_list);
-      }
+      //   try {
+      //     const params = {page: 1, size: 20};
+      //     const res = await getLandCustomersApi(params);
+      //     if (res && res.list) {
+      //       console.log('list', list);
+      //       setList(res.list);
+      //     }
+      //   } catch (error) {
+      //     console.log(error);
+      setList(origin_list);
+      //   }
     };
-
     fetchCustomers();
   });
 
@@ -405,6 +404,7 @@ const styles = StyleSheet.create({
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'flex-start',
+    flexWrap: 'nowrap',
   },
   colorGray: {
     color: '#7f7f7f',

@@ -1698,6 +1698,11 @@
     prompts "^2.4.0"
     semver "^7.5.2"
 
+"@react-native-community/geolocation@^3.2.0":
+  version "3.2.0"
+  resolved "https://registry.npmmirror.com/@react-native-community/geolocation/-/geolocation-3.2.0.tgz#d5350339deeb775a748b5cbba2e25cf1352e7a28"
+  integrity sha512-WkOjeDRBOdbor6YlKusEPkBx64x+Qf4enldF2tvCHyaXr0YcqdWXPZMMePIXUvQvyyuP5atnfPT5D2Q9VSx5mQ==
+
 "@react-native/assets-registry@^0.72.0":
   version "0.72.0"
   resolved "https://registry.npmmirror.com/@react-native/assets-registry/-/assets-registry-0.72.0.tgz"
@@ -1894,11 +1899,6 @@
   integrity sha512-mSM/iKUk5fDDrEV/e83qY+Cr3I1+Q3qqTuEn++HAWYjEa1+NxZr6CNrcJGf2ZTnq4HoFGC3zaTPZTobCzCFukA==
   dependencies:
     "@babel/types" "^7.20.7"
-
-"@types/geojson@^7946.0.13":
-  version "7946.0.14"
-  resolved "https://registry.npmmirror.com/@types/geojson/-/geojson-7946.0.14.tgz#319b63ad6df705ee2a65a73ef042c8271e696613"
-  integrity sha512-WCfD5Ht3ZesJUsONdhvm84dmzWOiOzOAqOncN0++w0lBw1o8OuDNJF2McvvCef/yBqb/HYRahp1BYtODFQ8bRg==
 
 "@types/graceful-fs@^4.1.3":
   version "4.1.9"
@@ -4652,6 +4652,11 @@ jsonfile@^4.0.0:
     object.assign "^4.1.4"
     object.values "^1.1.6"
 
+kdbush@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.npmmirror.com/kdbush/-/kdbush-3.0.0.tgz#f8484794d47004cc2d85ed3a79353dbe0abc2bf0"
+  integrity sha512-hRkd6/XW4HTsA9vjVpY9tuXJYLSlelnkTmVFu4M9/7MIYQtFcHpbugAU7UbOfjOiVSVYl2fqgBuJ32JUmRo5Ew==
+
 keyv@^4.5.3:
   version "4.5.4"
   resolved "https://registry.npmmirror.com/keyv/-/keyv-4.5.4.tgz"
@@ -5628,17 +5633,22 @@ react-is@^18.0.0, react-is@^18.2.0:
   resolved "https://registry.npmmirror.com/react-is/-/react-is-18.2.0.tgz"
   integrity sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==
 
+react-native-amap-geolocation@^1.2.3:
+  version "1.2.3"
+  resolved "https://registry.npmmirror.com/react-native-amap-geolocation/-/react-native-amap-geolocation-1.2.3.tgz#def0793a8f3f837fd549b111f86dcb3acdd74f5f"
+  integrity sha512-NKQG1eKJGHFnSGAMtsXZYfoKzlDAyK23cuKaIcJaWfa0kNr23pVrxOss3TcNRZTu8Syr9AwRus7I0PLGEcAaNA==
+
+react-native-amap3d@^3.2.4:
+  version "3.2.4"
+  resolved "https://registry.npmmirror.com/react-native-amap3d/-/react-native-amap3d-3.2.4.tgz#f467099fe14783ceff5ced98fee68d6d772b5f97"
+  integrity sha512-Cp7Tqd87arrxoBQdUGwmtjv7BuSt1XAqc/G+a/woI/pJqlUQScMqW/iHNJKC4jWr3wrJeaOYcjkOouoWCdDoOw==
+  dependencies:
+    supercluster "^7.1.4"
+
 react-native-linear-gradient@^2.8.3:
   version "2.8.3"
   resolved "https://registry.npmmirror.com/react-native-linear-gradient/-/react-native-linear-gradient-2.8.3.tgz"
   integrity sha512-KflAXZcEg54PXkLyflaSZQ3PJp4uC4whM7nT/Uot9m0e/qxFV3p6uor1983D1YOBJbJN7rrWdqIjq0T42jOJyA==
-
-react-native-maps@^1.10.3:
-  version "1.10.3"
-  resolved "https://registry.npmmirror.com/react-native-maps/-/react-native-maps-1.10.3.tgz#a669ee3a8baa01d30c5c7af7bdc498428d0e8284"
-  integrity sha512-P8/Viq5vgW9FRhvfDFQHxq02cZUcDJu6VbBZar7c/voGDbD5nrTIA0qlpiUAmrs1ikd8+7S4QjXQlorppBBMvA==
-  dependencies:
-    "@types/geojson" "^7946.0.13"
 
 react-native-safe-area-context@^4.8.2:
   version "4.8.2"
@@ -6305,6 +6315,13 @@ sudo-prompt@^9.0.0:
   version "9.2.1"
   resolved "https://registry.npmmirror.com/sudo-prompt/-/sudo-prompt-9.2.1.tgz"
   integrity sha512-Mu7R0g4ig9TUuGSxJavny5Rv0egCEtpZRNMrZaYS1vxkiIxGiGUwoezU3LazIQ+KE04hTrTfNPgxU5gzi7F5Pw==
+
+supercluster@^7.1.4:
+  version "7.1.5"
+  resolved "https://registry.npmmirror.com/supercluster/-/supercluster-7.1.5.tgz#65a6ce4a037a972767740614c19051b64b8be5a3"
+  integrity sha512-EulshI3pGUM66o6ZdH3ReiFcvHpM3vAigyK+vcxdjpJyEbIIrtbmBdY23mGgnI24uXiGFvrGq9Gkum/8U7vJWg==
+  dependencies:
+    kdbush "^3.0.0"
 
 supports-color@^5.3.0:
   version "5.5.0"
